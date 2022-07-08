@@ -41,3 +41,41 @@ elif age>5: # else if 의 줄임말, 그 외의 경우 else if 를 elif라 함 �
     print("그렇지 않아!")
 else:
     print("완전 유아야")
+    
+#반복문 while(10%), for(90%) - 반복자,리스트,튜플,range(...)활용
+sum = 0
+while sum <10:
+    sum += sum
+    sum += 1
+print(sum)
+
+n = 10
+sum = 0
+i = 0
+while i <= n:
+    if i%2 == 0:
+        i += 1
+        continue
+    sum += i
+    i += 1
+print(sum)
+
+sum = 0
+for i in range(3,n+1): # 3부터 n까지의 합
+    sum += i
+print(sum)
+
+sum = 0
+for i in range(n+1): # 0부터 n까지의 합
+    sum += i
+print(sum)
+
+sum = 0
+for i in range(1,11,2): # 1부터 10 까지 2 씩 띄워가며 덧셈
+    sum += i
+print(sum)
+
+# 함수의 정의
+def sum_of_list(a,b,c,d):
+    return a+b+c+d
+print(sum_of_list(5,6,7,8))
